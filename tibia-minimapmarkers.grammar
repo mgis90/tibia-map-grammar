@@ -23,20 +23,40 @@
                 <string name="description" id="10" fillcolor="FFFF7F" type="fixed-length" length="descriptionLength" encoding="ISO_8859-1:1987"/>
             </structure>
             <structure name="Marker" id="12" length="length+2" alignment="0" repeatmax="-1">
+<<<<<<< HEAD
                 <binary name="start" id="13" strokecolor="FFFFFF" fillcolor="C7FFC3" length="1">
+=======
+                <binary name="start" mustmatch="yes" id="13" strokecolor="FFFFFF" fillcolor="C7FFC3" length="1">
+>>>>>>> master
                     <fixedvalues>
                         <fixedvalue name="start" value="0A"/>
                     </fixedvalues>
                 </binary>
+<<<<<<< HEAD
                 <number name="length" id="14" strokecolor="FFFFFF" type="integer" length="1"/>
                 <binary name="sep" id="15" strokecolor="FFFFFF" fillcolor="D1D1D1" length="1">
+=======
+                <number name="length" id="14" strokecolor="FFFFFF" fillcolor="F2C9BD" type="integer" length="1"/>
+                <binary name="sep" mustmatch="yes" id="15" strokecolor="FFFFFF" fillcolor="D1D1D1" length="1">
+>>>>>>> master
                     <fixedvalues>
                         <fixedvalue name="sep" value="0A"/>
                     </fixedvalues>
                 </binary>
+<<<<<<< HEAD
                 <number name="lenCoords" id="16" strokecolor="FFFFFF" type="integer" length="1"/>
                 <structure name="coords" id="17" length="lenCoords+1">
                     <number name="xPos" id="18" strokecolor="FFFFFF" fillcolor="C5FFE0" repeatmax="4" type="integer" length="1" minval="0" maxval="255"/>
+=======
+                <number name="lenCoords" id="16" strokecolor="FFFFFF" fillcolor="FFFFCE" type="integer" length="1"/>
+                <structure name="coords" id="17" length="lenCoords+1">
+                    <number name="xPosStart" mustmatch="yes" id="35" strokecolor="FFFFFF" fillcolor="9FF6C1" type="integer" length="1">
+                        <fixedvalues>
+                            <fixedvalue name="startX" value="8"/>
+                        </fixedvalues>
+                    </number>
+                    <number name="xPos" id="18" strokecolor="FFFFFF" fillcolor="C5FFE0" repeatmax="3" type="integer" length="1" minval="0" maxval="255"/>
+>>>>>>> master
                     <binary name="xPosEnd" id="19" strokecolor="FFFFFF" fillcolor="D1D1D1" length="1">
                         <fixedvalues>
                             <fixedvalue name="end" value="10"/>
@@ -49,7 +69,11 @@
                         </fixedvalues>
                     </binary>
                     <number name="floor" id="22" strokecolor="FFFFFF" fillcolor="FFAF86" type="integer" length="1" maxval="15"/>
+<<<<<<< HEAD
                     <binary name="floorEnd" id="23" strokecolor="FFFFFF" fillcolor="BABABA" length="1">
+=======
+                    <binary name="floorEnd" mustmatch="yes" id="23" strokecolor="FFFFFF" fillcolor="BABABA" length="1">
+>>>>>>> master
                         <fixedvalues>
                             <fixedvalue name="end" value="10"/>
                         </fixedvalues>
